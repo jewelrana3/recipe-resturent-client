@@ -1,12 +1,11 @@
 import React from 'react';
-import Header from '../component/Header/Header';
 import {Outlet} from 'react-router-dom'
+import Header from '../pages/Sheard/Header/Header';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
-        
             <Outlet></Outlet>
         </div>
     );
