@@ -4,6 +4,7 @@ import Main from "../layout/Main";
 import Shop from "../pages/Shop/Shop";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
+import Catacory from "../pages/Catacory/Catacory";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         {
           path:'/',
           element:<Home></Home>
+        },
+        {
+          path:'/res/:id',
+          element:<Catacory></Catacory>
         },
         {
           path:'shop',

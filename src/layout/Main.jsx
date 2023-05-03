@@ -16,12 +16,12 @@ const Main = () => {
                         <LeftSide></LeftSide>
                     </Col>
                     <Col lg={9}>
-                     <Middle></Middle>
+                     <Outlet></Outlet>
                     </Col>
                     
                 </Row>
             </Container>
-            <Outlet></Outlet>
+            {/* <Outlet></Outlet> */}
         </div>
     );
 };
