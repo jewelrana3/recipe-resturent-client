@@ -2,11 +2,12 @@ import moment from 'moment/moment';
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { Link } from 'react-router-dom';
+import './Header.css'
 const Header = () => {
     return (
         <Container>
@@ -21,34 +22,21 @@ const Header = () => {
                 </Marquee>
             </div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Container>
-
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link to="/">HOME</Nav.Link>
-                            <Nav.Link to="/shop">SHOP</Nav.Link>
-                            <NavDropdown title="All RECIPES" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
-                                    Another action
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">
-                                    Separated link
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">Profile</Nav.Link>
-                            <Nav.Link eventKey={2} to="about">About</Nav.Link> 
-                            <Nav.Link eventKey={2} to="contact">Contact</Nav.Link> 
-                            <Nav.Link eventKey={2} to="register">Register</Nav.Link> 
-                            <Nav.Link eventKey={2} to="login">Login</Nav.Link> 
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto link">
+                        <Link to="/">HOME</Link>
+                        <Link to="/shop">SHOP</Link>
+                        <Link to="#deets">Profile</Link>
+                    </Nav>
+                    <Nav className='link'>
+                        <Link to="/about">About</Link>
+                        <Link to="contact">Contact</Link>
+                        
+                        <Link to="register">Register</Link>
+                        <Link to="/login">Login</Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
         </Container>
     );
