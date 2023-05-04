@@ -6,6 +6,7 @@ import LeftSide from '../pages/Sheard/LeftSide/LeftSide';
 
 
 import Navigate from '../pages/Sheard/Navigate/Navigate';
+import Footer from '../pages/Sheard/Footer/Footer';
 // import LeftSide from '../pages/Shared/LeftSide/LeftSide';
 
 const Main = () => {
@@ -27,6 +28,7 @@ const Main = () => {
                 </Row>
             </Container>
             {/* <Outlet></Outlet> */}
+           
         </div>
     );
 };

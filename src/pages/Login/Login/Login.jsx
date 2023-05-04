@@ -19,6 +19,7 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+        const from = location.state?.from?.pathname || "/res/0";
 
         console.log( email, password)
 
@@ -26,8 +27,7 @@ const Login = () => {
             .then(result => {
                 const createdUser = result.user;
                 console.log(createdUser);
-                Navigate('/res/0')
-                //  Navigate(from, {replace:true})
+                 Navigate(from, {replace:true})
             })
             .catch(error => {
                 console.log(error);

@@ -16,7 +16,7 @@ const Food = () => {
                 <Card.Text>
                  {des}
                 </Card.Text>
-                <Button className='text-white' variant='danger'><Link to='/'>Go to Back</Link></Button>
+                <Button className='text-white' variant='danger'><Link to='/res/0'>Go to Back</Link></Button>
               </Card.Body>
             </Card>
          
