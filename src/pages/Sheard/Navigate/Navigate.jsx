@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { HiUser } from "react-icons/hi";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,7 +8,12 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 
 const Navigate = () => {
-    const { user } = useContext(AuthContext)
+    const { user,logOut } = useContext(AuthContext)
+    const handleLogout=()=>{
+        logOut()
+        .then()
+        .catch(error=>console.error)
+    }
     return (
        <Container>
               <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -26,7 +31,7 @@ const Navigate = () => {
                         <Link to="contact">Contact</Link>
                         <Link to="/register">Register</Link>
                         {user ? 
-                        <button>LogOut</button>:
+                           <Button onClick={handleLogout} variant="secondary">LogOut</Button>:
                         <Link to="/login">Login</Link>
                     }
                     </Nav>

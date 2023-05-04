@@ -11,6 +11,7 @@ import Loginlayout from "../layout/Loginlayout/Loginlayout";
 import Navigate from "../pages/Sheard/Navigate/Navigate";
 import Login from "../pages/Login/Login/Login";
 import Register from "../pages/Login/Register";
+import PrivateRouter from "./PrivateRouter";
 
 
 const router = createBrowserRouter([
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
       children:[
         {
           path:':id',
-          element:<Food></Food>,
+          element:<PrivateRouter><Food></Food></PrivateRouter>,
           loader:({params})=> fetch(`http://localhost:3000/food/${params.id}`)
         }
       ]
