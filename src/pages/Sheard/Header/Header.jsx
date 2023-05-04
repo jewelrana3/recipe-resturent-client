@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 
 
 import './Header.css'
+import Footer from '../Footer/Footer';
 
 
 const Header = () => {
