@@ -5,6 +5,8 @@ import Shop from "../pages/Shop/Shop";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import Catacory from "../pages/Catacory/Catacory";
+import Food from "../pages/Food/Food/Food";
+import ResturentLayout from "../layout/ResturentLayout";
 
 const router = createBrowserRouter([
     {
@@ -13,11 +15,13 @@ const router = createBrowserRouter([
       children:[
         {
           path:'/',
-          element:<Home></Home>
+          element:<Catacory></Catacory>,
+          loader:()=> fetch('http://localhost:3000/food')
         },
         {
           path:'/res/:id',
-          element:<Catacory></Catacory>
+          element:<Catacory></Catacory>,
+          loader:({params})=> fetch(`http://localhost:3000/resturent/${params.id}`)
         },
         {
           path:'shop',
@@ -31,14 +35,17 @@ const router = createBrowserRouter([
           path:'login',
           element:<Login></Login>
         }
-        // {
-        //   path:'/blog',
-        //   element:<Blog></Blog>
-        // },
-        // {
-        //   path:'/food',
-        //   element:<Food></Food>
-        // }
+      ]
+    },
+    {
+      path:'food',
+      element:<ResturentLayout></ResturentLayout>,
+      children:[
+        {
+          path:':id',
+          element:<Food></Food>,
+          loader:({params})=> fetch(`http://localhost:3000/food/${params.id}`)
+        }
       ]
     }
   ])

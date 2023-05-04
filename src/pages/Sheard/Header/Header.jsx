@@ -1,14 +1,18 @@
 import moment from 'moment/moment';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Container } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
 // import { Link } from 'react-router-dom';
+
+import './Header.css'
+import { AuthContext } from '../../../provider/AuthProvider';
+import { HiUser } from "react-icons/hi";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
-import './Header.css'
 const Header = () => {
+    const { user } = useContext(AuthContext)
     return (
         <Container>
             <div className='text-center'>
@@ -27,14 +31,18 @@ const Header = () => {
                     <Nav className="me-auto link">
                         <Link to="/">HOME</Link>
                         <Link to="/shop">SHOP</Link>
-                        <Link to="#deets">Profile</Link>
+                       {user && <Link to="#deets">
+                            <HiUser style={{ fontSize: '2rem' }}></HiUser>
+                        </Link>}
                     </Nav>
                     <Nav className='link'>
                         <Link to="/about">About</Link>
                         <Link to="contact">Contact</Link>
-                        
                         <Link to="register">Register</Link>
+                        {user ? 
+                        <button>LogOut</button>:
                         <Link to="/login">Login</Link>
+                    }
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

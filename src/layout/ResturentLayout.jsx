@@ -3,24 +3,18 @@ import { Outlet } from 'react-router-dom'
 import Header from '../pages/Sheard/Header/Header';
 import { Col, Container, Row } from 'react-bootstrap';
 import LeftSide from '../pages/Sheard/LeftSide/LeftSide';
-import Middle from '../pages/Sheard/Middle/Middle';
-import NavigateBer from '../pages/NavigateBer/NavigateBer';
-// import LeftSide from '../pages/Shared/LeftSide/LeftSide';
 
-const Main = () => {
+const ResturentLayout = () => {
     return (
         <div>
             <Header></Header>
-            <NavigateBer></NavigateBer>
             <Container>
                 <Row>
-                    <Col lg={3}>
-                        <LeftSide></LeftSide>
-                    </Col>
-
-                    <Col lg={9}>
+                    
+                    <Col lg={12}>
                         <Outlet></Outlet>
                     </Col>
+
 
 
                 </Row>
@@ -30,4 +24,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default ResturentLayout;
