@@ -1,11 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import NavigateBer from '../../pages/NavigateBer/NavigateBer';
+import Navigate from '../../pages/Sheard/Navigate/Navigate';
+
 
 const Loginlayout = () => {
     return (
         <div>
-            <NavigateBer></NavigateBer>
+            <Navigate></Navigate>
             <Outlet></Outlet>
         </div>
     );

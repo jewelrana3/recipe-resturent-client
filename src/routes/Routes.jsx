@@ -1,40 +1,48 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Main from "../layout/Main";
-import Shop from "../pages/Shop/Shop";
-import Register from "../pages/Register/Register";
-import Login from "../pages/Login/Login";
+
+
+
 import Catacory from "../pages/Catacory/Catacory";
 import Food from "../pages/Food/Food/Food";
 import ResturentLayout from "../layout/ResturentLayout";
+import Loginlayout from "../layout/Loginlayout/Loginlayout";
+import Navigate from "../pages/Sheard/Navigate/Navigate";
+import Login from "../pages/Login/Login/Login";
+import Register from "../pages/Login/Register";
+
 
 const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Loginlayout></Loginlayout>,
+    children:[
+      {
+        path:'/',
+        element:<Navigate to='/res/0'></Navigate>
+      },
+      {
+        path:'login',
+        element:<Login></Login>
+      },
+      {
+        path:'register',
+        element:<Register></Register>
+      }
+    ]
+  },
     {
-      path:'/',
+      path:'res',
       element:<Main></Main>,
       children:[
+       
         {
-          path:'/',
-          element:<Catacory></Catacory>,
-          loader:()=> fetch('http://localhost:3000/food')
-        },
-        {
-          path:'/res/:id',
+          path:':id',
           element:<Catacory></Catacory>,
           loader:({params})=> fetch(`http://localhost:3000/resturent/${params.id}`)
         },
-        {
-          path:'shop',
-          element:<Shop></Shop>
-        },
-        {
-          path:'register',
-          element:<Register></Register>
-        },
-        {
-          path:'login',
-          element:<Login></Login>
-        }
+        
       ]
     },
     {

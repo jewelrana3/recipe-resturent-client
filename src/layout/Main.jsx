@@ -3,15 +3,16 @@ import { Outlet } from 'react-router-dom'
 import Header from '../pages/Sheard/Header/Header';
 import { Col, Container, Row } from 'react-bootstrap';
 import LeftSide from '../pages/Sheard/LeftSide/LeftSide';
-import Middle from '../pages/Sheard/Middle/Middle';
-import NavigateBer from '../pages/NavigateBer/NavigateBer';
+
+
+import Navigate from '../pages/Sheard/Navigate/Navigate';
 // import LeftSide from '../pages/Shared/LeftSide/LeftSide';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
-            <NavigateBer></NavigateBer>
+            <Navigate></Navigate>
             <Container>
                 <Row>
                     <Col lg={3}>
