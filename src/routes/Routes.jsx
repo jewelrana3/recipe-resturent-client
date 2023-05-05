@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<Catacory></Catacory>,
-          loader:({params})=> fetch(`http://localhost:3000/resturent/${params.id}`)
+          loader:({params})=> fetch(`https://assignment-10-server-jewelrana3.vercel.app/resturent/${params.id}`)
         },
         
       ]
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<PrivateRouter><Food></Food></PrivateRouter>,
-          loader:({params})=> fetch(`http://localhost:3000/food/${params.id}`)
+          loader:({params})=> fetch(`https://assignment-10-server-jewelrana3.vercel.app/food/${params.id}`)
         }
       ]
     }

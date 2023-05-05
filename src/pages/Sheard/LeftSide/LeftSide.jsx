@@ -5,7 +5,7 @@ const LeftSide = () => {
     const [resturent, setResturent] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/resturent')
+        fetch('https://assignment-10-server-jewelrana3.vercel.app//resturent')
             .then(res => res.json())
             .then(data => setResturent(data))
             .catch(error => console.error)
