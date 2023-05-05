@@ -27,7 +27,7 @@ const Main = () => {
 
                 </Row>
             </Container>
-            {/* <Outlet></Outlet> */}
+            <Outlet></Outlet>
             <Footer></Footer>
         </div>
     );
