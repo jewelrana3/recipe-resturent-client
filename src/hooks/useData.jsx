@@ -6,7 +6,7 @@ const useData = () => {
     const [loading,setLoading] = useState(true)
    
     useEffect(()=>{
-        fetch('data.json')
+        fetch('http://localhost:3000/food')
         .then(res=>res.json())
         .then(data => {
             setChief(data)
