@@ -40,7 +40,7 @@ const Navber = () => {
             <div className="navbar-end">
             {user ?
                     <>
-                         <img title="" style={{width:"40px"}} className="rounded-lg mr-4" src={user?.email} alt="" />
+                         <img title="Pizza Food" style={{width:"40px"}} className="rounded-lg mr-4" src='https://i.ibb.co/Bz4Ts9T/gettyimages-1301151665-612x612.jpg' alt="" />
                         <button className='btn text-white bg-red-950' onClick={handleLogout}>LogOut</button>
                     </>
                     :

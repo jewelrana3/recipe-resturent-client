@@ -21,15 +21,15 @@ const RecipeDetails = () => {
                 </div>
             </div>
             <div className="overflow-x-auto px-2">
-                <table className="table">
+                <table className="table bg-slate-300">
                     {/* head */}
                     <thead>
                         <tr>
                            
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Rating</th>
-                            <th>Favorite Color</th>
+                            <th className="text-xl ">Name</th>
+                            <th className="text-xl ">Job</th>
+                            <th className="text-xl ">Rating</th>
+                            <th className="text-xl ">Favorite Color</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,7 +37,7 @@ const RecipeDetails = () => {
                             <th>{recipes.title}</th>
                             <td>{recipes.cookingMethod}</td>
                             <td>{recipes.rating}</td>
-                            <td>Red</td>
+                            <td><button className="btn btn-info">Fevarate</button></td>
                         </tr>
                     </tbody>
                 </table>

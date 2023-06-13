@@ -28,7 +28,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         {
           path:'recipe/:id',
           element:<PrivateRouter><RecipeDetails></RecipeDetails></PrivateRouter>,
-          loader:({params})=> fetch(`http://localhost:3000/food/${params.id}`),
+          loader:({params})=> fetch(`https://b7a10-chef-recipe-hunter-server-side-jewelrana3.vercel.app/food/${params.id}`),
         
         },
         {
