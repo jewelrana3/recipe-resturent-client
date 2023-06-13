@@ -20,8 +20,8 @@ const RecipeDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="overflow-x-auto px-2">
-                <table className="table bg-slate-300">
+            <div className="overflow-x-auto px-2 mt-6">
+                <table className="table bg-slate-300 mt-6">
                     {/* head */}
                     <thead>
                         <tr>
