@@ -3,13 +3,18 @@ import { useEffect, useState } from "react";
 
 const useData = () => {
     const [chief,setChief] = useState([])
-    console.log(chief)
+    const [loading,setLoading] = useState(true)
+   
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
-        .then(data => setChief(data))
+        .then(data => {
+            setChief(data)
+            setLoading(false)
+        })
+
     },[])
-   return [chief]
+   return [chief,loading]
 };
 
 export default useData;

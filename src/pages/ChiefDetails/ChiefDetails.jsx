@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const ChiefDetails = ({ data }) => {
-    const { name, experienceYear, likes, recipe ,image} = data;
+    const {id, name, experienceYear, likes, recipe ,image} = data;
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl py-4 border p-2">
             <figure><img src={image} alt="Shoes" /></figure>
@@ -11,7 +12,7 @@ const ChiefDetails = ({ data }) => {
                 <p>Number of Recipe:{recipe}</p>
                 <p>Likes:{likes}</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-outline btn-accent">View Recipe</button>
+              <Link to={`recipe/${id}`}><button className="btn btn-outline btn-accent">View Recipe</button></Link>
                 </div>
             </div>
         </div>

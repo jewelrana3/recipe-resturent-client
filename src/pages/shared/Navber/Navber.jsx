@@ -1,13 +1,23 @@
-import { Link } from 'react-router-dom'
+import { useContext } from 'react';
+import {  Link, NavLink } from 'react-router-dom'
+import { AuthContext } from '../../../provider/AuthProvider';
 
 const Navber = () => {
+    const {user,logOut} = useContext(AuthContext)
 
-    const navItem = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
-    </>
+    const handleLogout=()=>{
+        logOut()
+        .then(()=>{})
+        .then(error => console.log(error))
+    }
+
+    const navItem = 
+    <div className='navItem flex'>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/blog'>Blog</NavLink></li>
+    </div>
     return (
-        <div className="navbar fixed  bg-red-100 z-10">
+        <div className="navbar fixed  bg-slate-700 text-white z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -17,7 +27,10 @@ const Navber = () => {
                         {navItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-xl">
+                    <img style={{width:'50px'}} src="https://i.ibb.co/jrsk83C/mixing-f2031564.png" alt="" />
+                    Cuisine <span className='text-red-500'>Qi</span>
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -25,7 +38,14 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+            {user ?
+                    <>
+                         <img title="" style={{width:"40px"}} className="rounded-lg mr-4" src={user?.email} alt="" />
+                        <button className='btn text-white bg-red-950' onClick={handleLogout}>LogOut</button>
+                    </>
+                    :
+                  <> <Link to='/login'><button className="btn btn-info">Login</button></Link> </>
+                }
             </div>
         </div>
     );

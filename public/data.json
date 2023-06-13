@@ -1,5 +1,6 @@
 [
     {
+        "id":"1",
         "title": "Fine Dining Experience",
         "man":"https://i.ibb.co/b1Y1w70/gettyimages-1146926600-612x612.jpg",
         "food":"https://i.ibb.co/bXFCmN1/1jsu8038-noodles-625x300-28-September-22.jpg",
@@ -23,6 +24,7 @@
         "cookingMethod": "1. In a saucepan, heat the chicken or vegetable broth and keep it warm.\n2. In a separate pan, sauté finely chopped shallots in olive oil until translucent.\n3. Add Arborio rice to the pan and cook for a couple of minutes, stirring constantly.\n4. Pour in white wine and cook until absorbed.\n5. Gradually add the warm broth, one ladle at a time, stirring continuously until the rice is cooked and creamy.\n6. Stir in grated Parmesan cheese and truffle oil.\n7. Season with salt and pepper to taste.\n8. Serve hot, garnished with additional Parmesan cheese and a drizzle of truffle oil."
     },
     {
+        "id":"2",
         "title": "Cozy Cafe Experience",
         "man":"https://i.ibb.co/RCR10B5/chinese-e-passport-photo-example.jpg",
         "food":"https://i.ibb.co/bXFCmN1/1jsu8038-noodles-625x300-28-September-22.jpg",
@@ -45,6 +47,7 @@
         "cookingMethod": "1. Toast the sourdough bread slices until golden and crispy.\n2. In a bowl, mash the ripe avocados with a fork and mix in lemon juice.\n3. Spread the mashed avocado mixture evenly on the toasted bread slices.\n4. Top with halved cherry tomatoes.\n5. Sprinkle with red pepper flakes, salt, and pepper.\n6. Serve as an open-faced sandwich or with an additional slice of toasted bread."
     },
     {
+        "id":"3",
         "title": "Family-Friendly Experience",
         "man":"https://i.ibb.co/JFj6427/cn-visa-online.jpg",
         "food":"https://i.ibb.co/QFFTn1d/istockphoto-545286388-612x612.jpg",
@@ -69,6 +72,7 @@
         "cookingMethod": "1. Cook the spaghetti according to package instructions.\n2. In a large skillet, brown the ground beef over medium heat.\n3. Add chopped onion and minced garlic to the skillet and cook until softened.\n4. Stir in tomato paste and cook for a minute.\n5. Add canned crushed tomatoes, Italian seasoning, salt, and pepper.\n6. Simmer the sauce for about 20 minutes, allowing the flavors to meld.\n7. Serve the cooked spaghetti topped with the Bolognese sauce."
     },
     {
+        "id":"4",
         "title": "Vibrant Street Food Experience",
         "man":"https://i.ibb.co/gd84qd7/gettyimages-1138171277-612x612.jpg",
         "food":"https://i.ibb.co/bXFCmN1/1jsu8038-noodles-625x300-28-September-22.jpg",
@@ -98,6 +102,7 @@
         "cookingMethod": "1. Cook the rice noodles according to package instructions and set aside.\n2. In a wok or large skillet, heat oil and sauté minced garlic until fragrant.\n3. Add shrimp and diced tofu, and cook until the shrimp turns pink and the tofu is lightly browned.\n4. Push the shrimp and tofu to one side and crack the eggs into the empty space. Scramble the eggs until cooked.\n5. Add drained rice noodles to the wok along with bean sprouts and chopped green onions.\n6. In a small bowl, whisk together fish sauce, tamarind paste, sugar, soy sauce, and red pepper flakes.\n7. Pour the sauce over the noodles and stir-fry everything together until well combined.\n8. Serve hot, garnished with crushed peanuts and lime wedges."
     },
     {
+        "id":"5",
         "title": "Garden-Inspired Experience",
         "man":"https://i.ibb.co/6DN2Fv2/gettyimages-1139257728-612x612.jpg",
         "food":"https://i.ibb.co/Bz4Ts9T/gettyimages-1301151665-612x612.jpg",
@@ -120,6 +125,7 @@
         "cookingMethod": "1. Slice the fresh tomatoes and fresh mozzarella cheese into rounds of equal thickness.\n2. Arrange the tomato and mozzarella slices on a serving platter, alternating them.\n3. Place a fresh basil leaf between each tomato and mozzarella slice.\n4. Drizzle extra virgin olive oil and balsamic vinegar over the salad.\n5. Season with salt and pepper to taste.\n6. Serve at room temperature as a refreshing appetizer or side dish."
     },
     {
+        "id":"6",
         "title": "Elegant French Experience",
         "man":"https://i.ibb.co/gPNygnF/gettyimages-1143002044-612x612.jpg",
         "food":"https://i.ibb.co/ZNSjhtL/istockphoto-483120255-612x612.jpg",

@@ -3,10 +3,10 @@ import useData from "../../hooks/useData";
 
 const Tending = () => {
     const [tending] = useData();
-    console.log(tending)
+  
     return (
         <div className="mt-8">
-            <h2 className="text-center text-3xl font-normal text-red-400">Tending Now</h2>
+            <h2 className="text-center text-3xl font-semibold ">Tending <span className="text-red-400">Now</span></h2>
             <div className="border-b-2 mt-4 border-indigo-500 ..."></div>
             <div className="grid grid-cols-6 mt-6">
                 {

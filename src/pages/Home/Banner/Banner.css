@@ -1,6 +1,7 @@
-/* .banner {
-    background-image: url('https://i.ibb.co/6wBDZGH/istockphoto-545455948-612x612.jpg');
+.banner {
+    background-image: url('https://i.ibb.co/StpBBnW/annie-spratt-R3-Lcf-Tvc-GWY-unsplash.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-} */
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height:700px;
+}

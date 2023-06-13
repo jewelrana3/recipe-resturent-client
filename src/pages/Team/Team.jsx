@@ -6,10 +6,10 @@ const Team = () => {
     const [team] = useData();
     return (
         <div className="bg-slate-300 mt-20 flex px-2 py-4">
-            <div className="text-center w-2/4">
-                <h2 className="text-3xl  text-red-500">The Simply Recipes Team</h2>
+            <div className="text-left w-2/4">
+                <h2 className="text-3xl font-semibold ">The Simply Recipes <span className="text-red-500">Team</span></h2>
                 <p className="text-left mt-5">Simply Recipes a resource for home cooks with more than 3,000 tested recipes, guides,<br /> and meal plans, drawing over 15 million readers each month from around the world.<br /> supported by a group of recipe developers, food writers, recipe and product testers, <br /> photographers, and other creative professionals.</p>
-                <button className="btn btn-outline btn-error">Read More</button>
+                <button className="btn btn-outline btn-error mt-4">Read More</button>
             </div>
             <div className="grid grid-cols-6 gap-4">
                 {
