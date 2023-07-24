@@ -1,11 +1,14 @@
 
+
 import { useLoaderData } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import useData from "../../hooks/useData";
 
 const RecipeDetails = () => {
     const recipes = useLoaderData();
     console.log(recipes)
-    const { title,cookingMethod, experienceYear, recipe, image, likes ,rating} = recipes;
+    const { title, experienceYear, recipe, image, likes } = recipes;
     return (
         <div>
             <div style={{ marginLeft: '30rem' }} className="pt-20 tex-center ">
@@ -37,7 +40,8 @@ const RecipeDetails = () => {
                             <th>{recipes.title}</th>
                             <td>{recipes.cookingMethod}</td>
                             <td>{recipes.rating}</td>
-                            <td><button className="btn btn-info">Fevarate</button></td>
+                            <td><button onClick={()=>toast('Not add this is cheak')} className="btn btn-info">Fevarate</button></td>
+                            <ToastContainer/>
                         </tr>
                     </tbody>
                 </table>
