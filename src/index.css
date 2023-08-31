@@ -3,6 +3,37 @@
 @tailwind utilities;
 
 .navItem a.active {
-    background-color: rgb(205, 91, 30);
-    
+  background-color: rgb(205, 91, 30);
+
+}
+
+
+
+
+/* media sreen side deploment */
+@media (max-width:1400px) {
+  .team button {
+    display: flex;
+    margin: auto;
   }
+}
+
+/* @media (max-width:1100px) {
+  .team button {
+
+    display: flex;
+    margin: auto;
+  }
+}
+
+@media (max-width:1040px) {
+  .team button {
+
+    display: flex;
+    margin: auto;
+  }
+}
+
+@media (max-width:500px) {
+  .team button {}
+} */

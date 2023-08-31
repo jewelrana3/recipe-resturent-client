@@ -8,7 +8,7 @@ const Tending = () => {
         <div className="mt-8">
             <h2 className="text-center text-3xl font-semibold ">Tending <span className="text-red-400">Now</span></h2>
             <div className="border-b-2 mt-4 border-indigo-500 ..."></div>
-            <div className="grid grid-cols-6 mt-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 mt-6">
                 {
                     tending.map(pd => <p 
                         key={pd.id}
