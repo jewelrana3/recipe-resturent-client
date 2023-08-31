@@ -29,7 +29,7 @@ const SignUp = () => {
         }).catch(error=>console.log(error))
     }
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200 pt-14">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="text-center lg:text-left mr-10">
                    

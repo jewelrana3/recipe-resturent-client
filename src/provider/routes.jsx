@@ -10,6 +10,10 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRouter from "./PrivateRouter";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Menu from "../pages/Menu/Menu";
+import Contact from "../pages/Contact/Contact";
+import BlogDetails from "../pages/BlogDetails/BlogDetails";
+import TypoGrapy from "../pages/TypoGrapy/TypoGrapy";
 
   const router = createBrowserRouter([
     {
@@ -24,6 +28,22 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         {
           path:'blog',
           element:<Blog></Blog>
+        },
+        {
+          path:'menu',
+          element:<Menu></Menu>
+        },
+        {
+          path:'contact',
+          element:<Contact></Contact>
+        },
+        {
+          path:'blog-details',
+          element:<BlogDetails></BlogDetails>
+        },
+        {
+          path:'typograpy',
+          element:<TypoGrapy></TypoGrapy>
         },
         {
           path:'recipe/:id',
