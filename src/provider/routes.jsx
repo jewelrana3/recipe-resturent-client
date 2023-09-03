@@ -14,6 +14,7 @@ import Menu from "../pages/Menu/Menu";
 import Contact from "../pages/Contact/Contact";
 import BlogDetails from "../pages/BlogDetails/BlogDetails";
 import TypoGrapy from "../pages/TypoGrapy/TypoGrapy";
+import About from "../pages/About/About";
 
   const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ import TypoGrapy from "../pages/TypoGrapy/TypoGrapy";
         {
           path:'contact',
           element:<Contact></Contact>
+        },
+        {
+          path:'about',
+          element:<About></About>
         },
         {
           path:'blog-details',

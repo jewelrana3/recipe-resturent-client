@@ -6,13 +6,14 @@
   background-color: rgb(205, 91, 30);
 
 }
-.navItem a:hover{
+
+.navItem a:hover {
   background: brown;
 }
 
 
 /* menu section */
-.menu-header{
+.menu-header {
   background: rgba(27, 24, 28, 0.8);
 }
 
@@ -20,8 +21,20 @@
  background: #c49e60;
 } */
 
-.fortin p{
- color: #c49e60;
+/* typograpgy section */
+.chef h2 {
+  opacity: .4;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family: Petit Formal Script,sans-serif; */
+}
+
+.fortin p {
+  color: #c49e60;
+}
+
+/* blog details */
+.blog-details:hover{
+background: aqua;
 }
 
 /* media sreen side deploment */
@@ -30,44 +43,167 @@
     display: flex;
     margin: auto;
   }
+  .chef-details img{
+    margin: 0 auto;
+    margin-right: 20px;
+  }
+  .large img{
+    margin: 0 auto;
+  }
+  .tag{
+   
+    margin-top:42px;
+    
+  }
+  .contact-form form textarea{
+    width: 650px;
+    }
+}
+@media (max-width:1024px) {
+  .about img{
+    width: 100%;
+  }
 }
 
 @media (max-width:900px) {
-  .menu-header img{
-    width:100%;
-    height:100%;
+  .menu-header img {
+    width: 100%;
+    height: 100%;
     margin: auto;
+    font-size: large;
+  }
+  .tag{
+   
+    margin-top:42px;
     
   }
 
-  .fortin p{
+  .fortin p {
     margin-right: 16px;
   }
+  .contact-form form textarea{
+    width: 650px;
+    }
+    .about img{
+      width: 100%;
+    }
 }
+
 @media (max-width:700px) {
-  .menu-header img{
-    width:90%;
-    height:80%;
+  .menu-header img {
+    width: 90%;
+    height: 80%;
     margin: auto;
     margin-top: 16px;
   }
+  .chef-details img{
+    margin: 0 auto;
+   
+  }
+  .tag{
+   
+    margin-top:42px;
+    
+  }
+ 
 
-  .fortin p{
+  .fortin p {
     margin-right: 8px;
+  }
+  .about img{
+    width: 100%;
+  }
+}
+@media (max-width:640px) {
+  .input-header .ptag{
+    margin-top: 20px;
+  }
+  .contact-form form textarea{
+    width:100%;
+  }
+  
+}
+
+@media (max-width:600px) {
+  .chef-details {
+    text-align: center;
+  }
+  .tag{
+    margin-right: 20px;
+    margin-top:-62px;
+    margin-bottom: -52px;
+  }
+ 
+
+  .chef-details img{
+    margin: 0 auto;
+  
+   
+  }
+  .input-header .ptag{
+    margin-top: 20px;
+  }
+  .contact-form form textarea{
+    width:100%;
+  }
+  .about img{
+    width: 100%;
   }
 }
 
+
 @media (max-width:500px) {
-  .menu-header{
+  .menu-header {
     display: block;
   }
-  .menu-header img{
-    width:100%;
-    height:300px;
+
+  .menu-header img {
+    width: 100%;
+    height: 300px;
   }
-  .fortin p{
+
+  .fortin p {
     margin: 0%;
     text-align: center;
     margin-top: 3px;
   }
-} 
+  .about img{
+    width: 100%;
+  }
+}
+
+
+
+
+@media (max-width:400px) {
+  .chef-details {
+    text-align: center;
+  }
+  .tag{
+    margin-right: 20px;
+    margin-top:-62px;
+    margin-bottom: -52px;
+  }
+ 
+
+  .chef-details img {
+   margin-left:5rem;
+   
+  }
+  .david{
+    margin: auto;
+   margin-right:2rem;
+  }
+  .david p{
+   
+  text-align: justify;
+  }
+
+  .input-header .ptag{
+    margin-top: 20px;
+  }
+  .contact-form form textarea{
+    width:100%;
+  }
+
+}

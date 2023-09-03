@@ -16,10 +16,8 @@ const Navber = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/blog'>Blog</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/blog-details'>Blog Details</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
-        <li><NavLink to='/menu'>Menu</NavLink></li>
-        <li><NavLink to='/typograpy'>Typograpy</NavLink></li>
+
     </>
     return (
         <div className="navbar fixed bg-slate-600 text-white z-10">
