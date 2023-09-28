@@ -17,7 +17,8 @@ const Navber = () => {
         <li><NavLink to='/blog'>Blog</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
-
+        
+       
     </>
     return (
         <div className="navbar fixed bg-slate-600 text-white z-10">
@@ -43,7 +44,7 @@ const Navber = () => {
             <div className="navbar-end">
             {user ?
                     <>
-                         <img title="Pizza Food" style={{width:"40px"}} className="rounded-lg mr-4" src='https://i.ibb.co/Bz4Ts9T/gettyimages-1301151665-612x612.jpg' alt="" />
+                         <img title={user?.displayName} style={{width:"40px"}} className="rounded-lg mr-4" src={user?.photoURL} alt="" />
                         <button className='btn text-white bg-red-950' onClick={handleLogout}>LogOut</button>
                     </>
                     :
